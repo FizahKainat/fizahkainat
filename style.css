@@ -298,6 +298,7 @@ text-align: center; /* text bhi center */
   }
   .hero-content {
     max-width: 100%;
+    margin-bottom: 50px;
   }
   .about-container {
     flex-direction: column;
