@@ -300,6 +300,9 @@ text-align: center; /* text bhi center */
     max-width: 100%;
     margin-bottom: 50px;
   }
+  .hero-image{
+    margin-top: 30px;
+  }
   .about-container {
     flex-direction: column;
     text-align: center;
@@ -314,3 +317,4 @@ text-align: center; /* text bhi center */
     grid-template-columns: 1fr;
   }
 }
+
