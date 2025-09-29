@@ -187,7 +187,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 28px;
-  justify-content: center;
+ justify-content: center;
+    align-items: center;
 }
 /* .about-image img {
   max-width: 400px;
@@ -318,5 +319,6 @@ text-align: center; /* text bhi center */
     grid-template-columns: 1fr;
   }
 }
+
 
 
