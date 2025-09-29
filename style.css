@@ -178,6 +178,7 @@ body {
 }
 .about-container {
   display: flex; align-items: center; gap: 50px;
+  justify-content: center;
   align-content: space-between;
 }
 .about-text {
@@ -319,6 +320,7 @@ text-align: center; /* text bhi center */
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
