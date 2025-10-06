@@ -1,15 +1,30 @@
 /* Reset & base */
+:root {
+  --cafe-noir: #4C3D19;
+  --kombu-green: #354024;
+  --moss-green: #889063;
+  --tan: #CFB899;
+  --bone: #E5D7C4;
+}
+
 * {
   margin: 0; padding: 0; box-sizing: border-box;
 }
 body {
-  font-family: 'Poppins', sans-serif;
-  background: #f4f9ff; 
-  color: #1e293b;
-  line-height: 1.6;
+ background: linear-gradient(135deg, var(--bone), var(--tan)) !important;
+  color: var(--kombu-green) !important;
+  font-family: "Poppins", "Segoe UI", sans-serif !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.6 !important;
 }
 .button{
     margin-top: 10px;
+}
+h1, h2, h3, h4 {
+  color: var(--cafe-noir) !important;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 /* Navbar
@@ -42,7 +57,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 60px;
-  background: #374b76;
+ background: linear-gradient(90deg, var(--kombu-green), var(--cafe-noir)) !important;
   position: relative; /* mobile dropdown ke liye */
 }
 
@@ -117,10 +132,10 @@ body {
 .hero-content h2 {
   font-size: 30px;
   margin-bottom: 20px;
-  color: #2563eb;
+  color: #ffffff;
 }
 .highlight {
-  color: #ff6b6b;
+  color: #000000;
 }
 .hero-content p {
   color: #475569;
@@ -149,11 +164,19 @@ body {
   transition: all 0.3s ease;
 }
 .btn.filled {
-  background: #2563eb;
-  color: #fff;
+   background-color: var(--kombu-green) !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 10px 24px !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
 }
 .btn.filled:hover {
-  background: #1e40af;
+   background-color: var(--moss-green) !important;
+  box-shadow: 0 0 12px rgba(136,144,99,0.4) !important;
+  transform: translateY(-2px) !important;
 }
 .btn.outline {
   border: 2px solid #2563eb;
@@ -211,7 +234,7 @@ body {
   font-size: 34px;
   margin-bottom: 40px;
   font-weight: bold;
-  background: linear-gradient(90deg, #2563eb, #ff6b6b);
+  background: linear-gradient(90deg, #b4b4b5, #5a0c0c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -238,22 +261,22 @@ body {
 
 /* ---- Card styling ---- */
 .service-card {
-  padding: 20px;
-  border-radius: 12px;
-  background: #fff;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  align-content: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  background-color: #fff !important;
+  color: var(--kombu-green) !important;
+  border-radius: 12px !important;
+  padding: 20px !important;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08) !important;
+  transition: all 0.3s ease !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  transform: translateY(-5px) !important;
+  box-shadow: 0 12px 25px rgba(136,144,99,0.3) !important;
 }
 
 .service-card h3 {
@@ -354,6 +377,5 @@ body {
     grid-template-columns: 1fr;
   }
 }
-
 
 
